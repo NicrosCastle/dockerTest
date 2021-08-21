@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  ubuntu:
+    image: ubuntu:latest
+    container_name: efimov_5
+    command: touch /test/change_me.txt
+    volumes:
+      - ${PWD}/:/test
